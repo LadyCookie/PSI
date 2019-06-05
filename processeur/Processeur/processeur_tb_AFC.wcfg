@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/bouzerea/Documents/4A/Autom/processeur/Processeur/processeur_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="common" />
+            <top_module name="numeric_std" />
+            <top_module name="processeur_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/processeur_tb/uut/PL_LI_DI/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="group74" type="group">
+      <obj_property name="label">PL_LI_DI</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/processeur_tb/uut/PL_LI_DI/opin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">opin[3:0]</obj_property>
+         <obj_property name="ObjectShortName">opin[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_LI_DI/opout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">opout[3:0]</obj_property>
+         <obj_property name="ObjectShortName">opout[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_LI_DI/ain" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ain[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ain[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_LI_DI/bin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bin[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bin[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_LI_DI/aout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">aout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">aout[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_LI_DI/bout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bout[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group81" type="group">
+      <obj_property name="label">PL_DI_EX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/processeur_tb/uut/PL_DI_EX/opin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">opin[3:0]</obj_property>
+         <obj_property name="ObjectShortName">opin[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_DI_EX/opout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">opout[3:0]</obj_property>
+         <obj_property name="ObjectShortName">opout[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_DI_EX/ain" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ain[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ain[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_DI_EX/bin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bin[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bin[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_DI_EX/aout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">aout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">aout[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_DI_EX/bout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bout[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group88" type="group">
+      <obj_property name="label">PL_EX_MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/processeur_tb/uut/PL_EX_MEM/opin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">opin[3:0]</obj_property>
+         <obj_property name="ObjectShortName">opin[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_EX_MEM/opout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">opout[3:0]</obj_property>
+         <obj_property name="ObjectShortName">opout[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_EX_MEM/ain" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ain[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ain[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_EX_MEM/bin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bin[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bin[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_EX_MEM/aout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">aout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">aout[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_EX_MEM/bout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bout[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group95" type="group">
+      <obj_property name="label">PL_MEM_RE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/processeur_tb/uut/PL_MEM_RE/opin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">opin[3:0]</obj_property>
+         <obj_property name="ObjectShortName">opin[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_MEM_RE/opout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">opout[3:0]</obj_property>
+         <obj_property name="ObjectShortName">opout[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_MEM_RE/ain" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ain[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ain[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_MEM_RE/bin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bin[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bin[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_MEM_RE/aout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">aout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">aout[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/PL_MEM_RE/bout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bout[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group104" type="group">
+      <obj_property name="label">BR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/processeur_tb/uut/Module_br/regw" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">regw[7:0]</obj_property>
+         <obj_property name="ObjectShortName">regw[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/Module_br/rega" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rega[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rega[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/Module_br/regb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">regb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">regb[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/Module_br/valin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">valin[15:0]</obj_property>
+         <obj_property name="ObjectShortName">valin[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/Module_br/valouta" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">valouta[15:0]</obj_property>
+         <obj_property name="ObjectShortName">valouta[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/Module_br/valoutb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">valoutb[15:0]</obj_property>
+         <obj_property name="ObjectShortName">valoutb[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/Module_br/tab" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">tab[15:0]</obj_property>
+         <obj_property name="ObjectShortName">tab[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/processeur_tb/uut/Module_br/w" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">w</obj_property>
+         <obj_property name="ObjectShortName">w</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

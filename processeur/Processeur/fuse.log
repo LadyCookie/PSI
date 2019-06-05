@@ -1,0 +1,43 @@
+Running: /usr/local/insa/Xilinx.ISE/13.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/bouzerea/Documents/4A/Autom/processeur/Processeur/processeur_test_compteur_instru_isim_beh.exe -prj /home/bouzerea/Documents/4A/Autom/processeur/Processeur/processeur_test_compteur_instru_beh.prj work.processeur_test_compteur_instru 
+ISim O.87xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/common.vhd" into library work
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/UAL.vhd" into library work
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Pipeline.vhd" into library work
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/MI.vhd" into library work
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/MEM.vhd" into library work
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/InstruMUX.vhd" into library work
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/CompteurSynchrone.vhd" into library work
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/BR.vhd" into library work
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" into library work
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/processeur_test_compteur_instru.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 100352 KB
+Fuse CPU Usage: 1120 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package common
+Compiling architecture behavioral of entity MI [\MI(16,36)\]
+Compiling architecture behavioral of entity CompteurSynchrone [\CompteurSynchrone(16)\]
+Compiling architecture behavioral of entity InstruMUX [\InstruMUX(36,16,4)\]
+Compiling architecture behavioral of entity BR [\BR(16,8,16)\]
+Compiling architecture behavioral of entity UAL [\UAL(16)\]
+Compiling architecture behavioral of entity MEM [\MEM(16,100,16)\]
+Compiling architecture behavioral of entity Pipeline [\Pipeline(16,4)\]
+Compiling architecture behavioral of entity Processeur [processeur_default]
+Compiling architecture behavior of entity processeur_test_compteur_instru
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 25 VHDL Units
+Built simulation executable /home/bouzerea/Documents/4A/Autom/processeur/Processeur/processeur_test_compteur_instru_isim_beh.exe
+Fuse Memory Usage: 1206336 KB
+Fuse CPU Usage: 1690 ms
+GCC CPU Usage: 700 ms

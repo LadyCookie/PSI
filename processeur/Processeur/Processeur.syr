@@ -1,0 +1,318 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Reading design: Processeur.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Processeur.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Processeur"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Processeur
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/common.vhd" into library work
+Parsing package <common>.
+Parsing package body <common>.
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/UAL.vhd" into library work
+Parsing entity <UAL>.
+Parsing architecture <Behavioral> of entity <ual>.
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Pipeline.vhd" into library work
+Parsing entity <Pipeline>.
+Parsing architecture <Behavioral> of entity <pipeline>.
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/MI.vhd" into library work
+Parsing entity <MI>.
+Parsing architecture <Behavioral> of entity <mi>.
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/MEM.vhd" into library work
+Parsing entity <MEM>.
+Parsing architecture <Behavioral> of entity <mem>.
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/InstruMUX.vhd" into library work
+Parsing entity <InstruMUX>.
+Parsing architecture <Behavioral> of entity <instrumux>.
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/CompteurSynchrone.vhd" into library work
+Parsing entity <CompteurSynchrone>.
+Parsing architecture <Behavioral> of entity <compteursynchrone>.
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/BR.vhd" into library work
+Parsing entity <BR>.
+Parsing architecture <Behavioral> of entity <br>.
+Parsing VHDL file "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" into library work
+Parsing entity <Processeur>.
+Parsing architecture <Behavioral> of entity <processeur>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Processeur> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 211: Using initial value "0000000000000000" for compteur_in_d since it is never assigned
+
+Elaborating entity <MI> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <CompteurSynchrone> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <InstruMUX> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <BR> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <UAL> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <MEM> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Pipeline> (architecture <Behavioral>) with generics from library <work>.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 217. All outputs of instance <Module_mi> of block <MI> are unconnected in block <Processeur>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 218. All outputs of instance <Module_Compteur> of block <CompteurSynchrone> are unconnected in block <Processeur>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 220. All outputs of instance <Module_InstruMux> of block <InstruMUX> are unconnected in block <Processeur>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 222. All outputs of instance <Module_br> of block <BR> are unconnected in block <Processeur>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 223. All outputs of instance <Module_ual> of block <UAL> are unconnected in block <Processeur>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 224. All outputs of instance <Module_mem> of block <MEM> are unconnected in block <Processeur>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 226. All outputs of instance <PL_LI_DI> of block <Pipeline> are unconnected in block <Processeur>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 227. All outputs of instance <PL_DI_EX> of block <Pipeline> are unconnected in block <Processeur>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 228. All outputs of instance <PL_EX_MEM> of block <Pipeline> are unconnected in block <Processeur>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 229. All outputs of instance <PL_MEM_RE> of block <Pipeline> are unconnected in block <Processeur>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Processeur>.
+    Related source file is "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd".
+INFO:Xst:3210 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 223: Output port <C> of the instance <Module_ual> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 223: Output port <N> of the instance <Module_ual> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 223: Output port <V> of the instance <Module_ual> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 223: Output port <Z> of the instance <Module_ual> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" line 229: Output port <Cout> of the instance <PL_MEM_RE> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Processeur> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Processeur> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Processeur, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Processeur.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of    232     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 73.00 secs
+Total CPU time to Xst completion: 60.61 secs
+ 
+--> 
+
+
+Total memory usage is 386656 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

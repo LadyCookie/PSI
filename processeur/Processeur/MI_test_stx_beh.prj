@@ -1,0 +1,2 @@
+vhdl isim_temp "MI.vhd"
+vhdl isim_temp "MI_test.vhd"

@@ -1,0 +1,8 @@
+flex file.l
+gcc lex.yy.c -o output -ll
+
+./output
+
+
+
+yacc -d compiler.y  (cela donne un .e et n .h)

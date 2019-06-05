@@ -1,0 +1,6 @@
+structure du processeur qu'on va devoir réaliser
+MI pipeline BR pipeline UAL pipeline MEM pipeline ecriture BR
+
+UAL PAS DE PROCESS  (+ - * || && <<)
+MI= mémoire d'instruction
+MI PAS DE PROCESS : les instructions étant figées, pas besoin de changer d'état. c'est un tableau
