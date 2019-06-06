@@ -2,9 +2,27 @@ Command line:
    processeur_test_compteur_instru_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  37170
+     -socket  37020
 
-Wed Jun  5 12:55:34 2019
+Wed Jun  5 18:56:55 2019
 
 
- Elaboration Time: 1.75 sec
+ Elaboration Time: 1.81 sec
+
+ Current Memory Usage: 1941 Meg
+
+ Total Signals          : 159
+ Total Nets             : 2362144
+ Total Signal Drivers   : 81
+ Total Blocks           : 19
+ Total Primitive Blocks : 17
+ Total Processes        : 54
+ Total Traceable Variables  : 73
+ Total Scalar Nets and Variables : 2363279
+
+ Total Simulation Time: 3.72 sec
+
+ Current Memory Usage: 2016.5 Meg
+
+Wed Jun  5 18:58:33 2019
+

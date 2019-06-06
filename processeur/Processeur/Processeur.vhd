@@ -210,6 +210,9 @@ architecture Behavioral of Processeur is
 	signal Compteur_in_EN, Compteur_in_RST, Compteur_in_LOAD, Compteur_in_SENS : std_logic;
 	signal Compteur_in_D, Compteur_out_D : std_logic_vector(SizeIndexMI-1 downto 0) := (others => '0');
 		
+	--tampon pour aléa
+	signal compteur : integer;
+	
 begin
 
 	-- modules instanciation
@@ -334,6 +337,30 @@ begin
 			
 	wait until CLK'event and CLK='1';
 	
+		if(  (Pl_LI_DI_Out_OP = ADD or 
+				Pl_LI_DI_Out_OP = SOU or
+				Pl_LI_DI_Out_OP = MUL or
+				Pl_LI_DI_Out_OP = COP or
+				Pl_LI_DI_Out_OP = AFC )
+		
+		
+				and (PL_LI_DI_In_OP /= AFC or PL_LI_DI_In_OP /= LOAD )) then --pb d'aléa
+			
+			Compteur_in_EN <= '1' ;
+			compteur<=6;
+		end if;
+		
+		if(compteur = 0) then
+		Compteur_in_EN <= '0';
+		end if;
+		
+		if(Compteur_in_EN = '1') then
+			PL_DI_EX_in_OP <= "0000";
+			PL_DI_EX_in_A <= "0000000000000000";
+			PL_DI_EX_in_B <= "0000000000000000";
+			PL_DI_EX_in_C <= "0000000000000000";
+			compteur <= compteur - 1;
+		end if;
 	
 	end process;
 end Behavioral;

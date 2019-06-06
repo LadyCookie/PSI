@@ -45,7 +45,7 @@ end MI;
 
 architecture Behavioral of MI is
 
-	signal MI : instrArray := init_rom(filename => "../../compilateur/out_test_LOAD_STORE.asm");
+	signal MI : instrArray := init_rom(filename => "../../compilateur/out_all.asm");
 
 begin
 	

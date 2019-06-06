@@ -2,10 +2,15 @@ main() {
 	int i,j;	
 	i=0;
 
-	j=0;
+	j=3;
 
-	while(i<4){
-		j=j+2;
-		i=i+1;
+	if(j==3){
+		i=3;
+		if(j==2){
+			i=1;
+		}
+	}
+	else{
+		i=2;
 	}
 }

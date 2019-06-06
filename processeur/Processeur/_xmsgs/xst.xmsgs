@@ -11,49 +11,40 @@
 <msg type="warning" file="HDLCompiler" num="871" delta="old" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 211: Using initial value <arg fmt="%s" index="1">&quot;0000000000000000&quot;</arg> for <arg fmt="%s" index="2">compteur_in_d</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">217</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Module_mi</arg>&gt; of block &lt;<arg fmt="%s" index="4">MI</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 188: Net &lt;<arg fmt="%s" index="1">PL_LI_DI_in_OP[3]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">218</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Module_Compteur</arg>&gt; of block &lt;<arg fmt="%s" index="4">CompteurSynchrone</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="HDLCompiler" num="1401" delta="new" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 256: Signal <arg fmt="%s" index="1">PL_DI_EX_in_OP[3]</arg> in unit <arg fmt="%s" index="2">Processeur</arg> is connected to following multiple drivers:
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">220</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Module_InstruMux</arg>&gt; of block &lt;<arg fmt="%s" index="4">InstruMUX</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="HDLCompiler" num="1379" delta="new" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 335: Driver <arg fmt="%d" index="1">0</arg>: <arg fmt="%s" index="2">output signal PL_DI_EX_in_OP[3] of instance Flip-flop</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">222</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Module_br</arg>&gt; of block &lt;<arg fmt="%s" index="4">BR</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="HDLCompiler" num="1379" delta="new" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 256: Driver <arg fmt="%d" index="1">1</arg>: <arg fmt="%s" index="2">PL_LI_DI_out_OP[3]_buf_3/o[3] driven by output signal OPout[3] of instance Flip-flop</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">223</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Module_ual</arg>&gt; of block &lt;<arg fmt="%s" index="4">UAL</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="HDLCompiler" num="1401" delta="new" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 257: Signal <arg fmt="%s" index="1">PL_DI_EX_in_A[15]</arg> in unit <arg fmt="%s" index="2">Processeur</arg> is connected to following multiple drivers:
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">224</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Module_mem</arg>&gt; of block &lt;<arg fmt="%s" index="4">MEM</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="HDLCompiler" num="1379" delta="new" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 257: Driver <arg fmt="%d" index="1">1</arg>: <arg fmt="%s" index="2">PL_LI_DI_out_A[15]_buf_4/o[15] driven by output signal Aout[15] of instance Flip-flop</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">PL_LI_DI</arg>&gt; of block &lt;<arg fmt="%s" index="4">Pipeline</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="HDLCompiler" num="1401" delta="new" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 271: Signal <arg fmt="%s" index="1">PL_DI_EX_in_B[15]</arg> in unit <arg fmt="%s" index="2">Processeur</arg> is connected to following multiple drivers:
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">227</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">PL_DI_EX</arg>&gt; of block &lt;<arg fmt="%s" index="4">Pipeline</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="HDLCompiler" num="1379" delta="new" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 271: Driver <arg fmt="%d" index="1">1</arg>: <arg fmt="%s" index="2">output signal PL_DI_EX_in_B[15] of instance Multiplexer</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">228</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">PL_EX_MEM</arg>&gt; of block &lt;<arg fmt="%s" index="4">Pipeline</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="HDLCompiler" num="1401" delta="new" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 258: Signal <arg fmt="%s" index="1">PL_DI_EX_in_C[15]</arg> in unit <arg fmt="%s" index="2">Processeur</arg> is connected to following multiple drivers:
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%d" index="2">229</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">PL_MEM_RE</arg>&gt; of block &lt;<arg fmt="%s" index="4">Pipeline</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Processeur</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="HDLCompiler" num="1379" delta="new" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 258: Driver <arg fmt="%d" index="1">1</arg>: <arg fmt="%s" index="2">output signal PL_DI_EX_in_C[15] of instance Multiplexer</arg>
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%s" index="2">223</arg>: Output port &lt;<arg fmt="%s" index="3">C</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Module_ual</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="error" file="HDLCompiler" num="1401" delta="old" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 335: Signal <arg fmt="%s" index="1">Compteur_in_LOAD</arg> in unit <arg fmt="%s" index="2">Processeur</arg> is connected to following multiple drivers:
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%s" index="2">223</arg>: Output port &lt;<arg fmt="%s" index="3">N</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Module_ual</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%s" index="2">223</arg>: Output port &lt;<arg fmt="%s" index="3">V</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Module_ual</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%s" index="2">223</arg>: Output port &lt;<arg fmt="%s" index="3">Z</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Module_ual</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd</arg>&quot; line <arg fmt="%s" index="2">229</arg>: Output port &lt;<arg fmt="%s" index="3">Cout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">PL_MEM_RE</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="error" file="HDLCompiler" num="1379" delta="old" >"/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Processeur.vhd" Line 244: Driver <arg fmt="%d" index="1">0</arg>: <arg fmt="%s" index="2">output signal of instance Ground</arg>
 </msg>
 
 </messages>

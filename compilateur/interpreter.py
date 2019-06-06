@@ -3,7 +3,7 @@ import sys
 ins = open(sys.argv[1]).readlines()
 ins = [l.split("	") for l in ins]
 print(ins)
-ins = [[l[0], int(l[1]), int(l[2]), int(l[3])] for l in ins]
+ins = [[l[0], int(l[1]), int(l[2])] for l in ins]  #, int(l[3])
 
 mem = [0 for i in range(1024)]
 reg = [0 for i in range(32)]

@@ -39,4 +39,5 @@ at 0 ps, Instance /processeur_test_compteur_instru/uut/Module_br/ : Warning: NUM
 at 0 ps, Instance /processeur_test_compteur_instru/uut/Module_br/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /processeur_test_compteur_instru/uut/Module_br/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /processeur_test_compteur_instru/uut/Module_br/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Stopped at time : 1068405 ns : File "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/CompteurSynchrone.vhd" Line 54
+Stopped at time : 1670545 ns : File "/home/bouzerea/Documents/4A/Autom/processeur/Processeur/Pipeline.vhd" Line 55
+# exit 0

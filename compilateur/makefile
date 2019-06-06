@@ -10,8 +10,6 @@ y.tab.c:wh.y
 	yacc -d -t -v wh.y
 
 test:compiler
-	./compiler < test00.c || echo "mince"
-	./compiler < test01.c || echo "mince"
-	./compiler < test02.c | grep '^#' | sed 's/^#//' > test02.s || echo "mince"
+	./compiler < finaltest.c | grep '^#' | sed 's/^#//' > finaltest.s || echo "mince"
 clean:
 	rm y.tab.c y.tab.h lex.yy.c

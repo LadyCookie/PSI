@@ -64,12 +64,13 @@ extern int yydebug;
     tEND = 274,
     tERROR = 275,
     tIF = 276,
-    tWHILE = 277,
-    tPE = 278,
-    tCO = 279,
-    tCF = 280,
-    tAND = 281,
-    tOR = 282
+    tELSE = 277,
+    tWHILE = 278,
+    tPE = 279,
+    tCO = 280,
+    tCF = 281,
+    tAND = 282,
+    tOR = 283
   };
 #endif
 /* Tokens.  */
@@ -92,12 +93,13 @@ extern int yydebug;
 #define tEND 274
 #define tERROR 275
 #define tIF 276
-#define tWHILE 277
-#define tPE 278
-#define tCO 279
-#define tCF 280
-#define tAND 281
-#define tOR 282
+#define tELSE 277
+#define tWHILE 278
+#define tPE 279
+#define tCO 280
+#define tCF 281
+#define tAND 282
+#define tOR 283
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -109,7 +111,7 @@ union YYSTYPE
 	int entier;
 	char * string;
 
-#line 113 "y.tab.h" /* yacc.c:1909  */
+#line 115 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;

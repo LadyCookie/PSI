@@ -33,10 +33,10 @@
 	char * string;
 }
 
-%token tMAIN tACCO tACCF tPRINTF tVAR tCONST tTYPEINT tINT tADD tSUB tMUL tDIV tEQ tPO tPF tCOM tEND tERROR tIF tWHILE tPE tCO tCF tAND tOR
+%token tMAIN tACCO tACCF tPRINTF tVAR tCONST tTYPEINT tINT tADD tSUB tMUL tDIV tEQ tPO tPF tCOM tEND tERROR tIF tELSE tWHILE tPE tCO tCF tAND tOR
 
 %type <string> tVAR
-%type <entier> tINT tWHILE
+%type <entier> tINT tWHILE tIF
 %type <entier> operation affectation condition
 
 %right tEQ
@@ -66,7 +66,7 @@ instruction: definitions tEND
 	| print tEND
 
 //ATTENTION A SUPPRIMER LES VARIABLES DE CONDITION
-	| tIF tPO condition { ins_add2("LOAD",0,$3); $3=ins_add2("JMPC",-1,0); suppress_temp();} tPF tACCO {depth_cur++;} instructions tACCF {depth_cur--; update_ins($3);} 
+	| tIF tPO condition { ins_add2("LOAD",0,$3); $3=ins_add2("JMPC",-1,0); suppress_temp();} tPF tACCO {depth_cur++;} instructions  { $1=ins_add2("JMP",-1,0);} tACCF {update_ins($3);} else {depth_cur--; update_ins($1);} 
 
 
 	| tWHILE tPO {$1=get_last_addr_ins();} condition {ins_add2("LOAD",0,$4); $4=ins_add2("JMPC",-1,0); suppress_temp(); } tPF tACCO  {depth_cur++;} instructions tACCF  {depth_cur--; ins_add2("JMP",$1,-1) ;update_ins($4); }  ;
@@ -84,7 +84,9 @@ condition:
 	| condition tCF condition     { OPERATION("SUP", $$, $1 ,$3); }
 	| condition tAND condition	{ OPERATION("MUL",$$,$1,$3); ins_add2("AFC",1,0); ins_add2("EQU",0,1);}	  
 	| condition tOR condition   { OPERATION("ADD",$$,$1,$3); ins_add2("AFC",1,0); ins_add2("EQU",0,1);};
- 	
+ 
+else: tELSE tACCO instructions tACCF 
+ |;	
 
 definitions: types noms ;
 
