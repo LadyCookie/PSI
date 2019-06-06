@@ -1,0 +1,5 @@
+lancer une compilation avec notre compilateur (fichier finaltest.c) et utiliser l'interpréteur python:
+cd compilateur
+make test
+cd ..
+python /interpreteur/interpreter.py /compilateur/finaltest.s
